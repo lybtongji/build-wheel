@@ -43,7 +43,7 @@ jobs:
         uses: jurplel/install-qt-action@v3
         with:
           cached: ${{ steps.cache-qt.outputs.cache-hit }}
-          modules: 'qtsvg'
+          archives: 'qtsvg'
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
